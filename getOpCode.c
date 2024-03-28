@@ -15,6 +15,7 @@ instruction_t opCmd[] = {
 {"pall", pallOp},
 {"pint", pintOp},
 {"swap", swapOp},
+{"nop", nopOp},
 {NULL, NULL}};
 int i = 0;
 

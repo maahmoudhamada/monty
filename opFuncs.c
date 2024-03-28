@@ -77,3 +77,17 @@ scd->n = tmp;
 }
 }
 
+/**
+* nopOp - sdsdsds
+*
+* @stack: sdsdsdsd
+* @line_number: sdsdsdsd
+*
+* Return: sdsdsdsds
+*/
+void nopOp(stack_t **stack, unsigned int line_number __attribute__((unused)))
+{
+(void) stack;
+return;
+}
+
