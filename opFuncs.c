@@ -44,9 +44,9 @@ printf("%d\n", p->n);
 */
 void pintOp(stack_t **stack, unsigned int line_number __attribute__((unused)))
 {
-int len = listLen();
+/* int len = listLen(); */
 
-if (len == 0)
+if (*stack == NULL)
 errorHandling("can't pint, stack empty", 3);
 
 printf("%d\n", (*stack)->n);
