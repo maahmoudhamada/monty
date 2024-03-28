@@ -44,11 +44,36 @@ printf("%d\n", p->n);
 */
 void pintOp(stack_t **stack, unsigned int line_number __attribute__((unused)))
 {
-/* int len = listLen(); */
+int len = listLen();
 
-if (*stack == NULL)
+if (len == 0)
 errorHandling("can't pint, stack empty", 3);
-
+else
 printf("%d\n", (*stack)->n);
+}
+
+/**
+* swapOp - sdsdsds
+*
+* @stack: sdsdsdsd
+* @line_number: sdsdsdsd
+*
+* Return: sdsdsdsds
+*/
+void swapOp(stack_t **stack, unsigned int line_number __attribute__((unused)))
+{
+stack_t *fst, *scd;
+int tmp, len = listLen();
+
+if (len < 2)
+errorHandling("can't swap, stack too short", 3);
+else
+{
+fst = *stack;
+scd = (*stack)->next;
+tmp = fst->n;
+fst->n = scd->n;
+scd->n = tmp;
+}
 }
 

@@ -16,7 +16,6 @@ if (top == NULL)
 return (NULL);
 
 new = malloc(sizeof(stack_t));
-
 if (new == NULL)
 errorHandling("Error: malloc failed", 1);
 
