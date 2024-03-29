@@ -17,6 +17,7 @@ instruction_t opCmd[] = {
 {"swap", swapOp},
 {"nop", nopOp},
 {"add", addOp},
+{"sub", subOp},
 {NULL, NULL}};
 int i = 0;
 
