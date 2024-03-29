@@ -50,3 +50,30 @@ free(*stack);
 *stack = ptr;
 }
 
+/**
+* divOp - fdfdfdf
+*
+* @stack: sdsdsd
+* @line_number: sdsdsd
+*
+* Return: sdsdsdsd
+*/
+void divOp(stack_t **stack, unsigned int line_number __attribute__((unused)))
+{
+stack_t *ptr;
+int tmp, len;
+
+len = listLen();
+if (len < 2)
+errorHandling("can't div, stack too short", 3);
+else if ((*stack)->n == 0)
+errorHandling("division by zero", 3);
+
+ptr = (*stack)->next;
+tmp = ptr->n / (*stack)->n;
+ptr->n = tmp;
+ptr->prev = (*stack)->prev;
+free(*stack);
+*stack = ptr;
+}
+

@@ -18,6 +18,7 @@ instruction_t opCmd[] = {
 {"nop", nopOp},
 {"add", addOp},
 {"sub", subOp},
+{"div", divOp},
 {NULL, NULL}};
 int i = 0;
 
