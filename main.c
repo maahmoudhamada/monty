@@ -24,7 +24,7 @@ char buf[256];
 inf.filePtr = fopen(inf.fileName, "r");
 if (inf.filePtr == NULL)
 {
-fprintf(stderr, "%s %s\n", "Can't open file", inf.fileName);
+fprintf(stderr, "%s %s\n", "Error: Can't open file", inf.fileName);
 exit(1);
 }
 
