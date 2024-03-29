@@ -88,6 +88,7 @@ void mulOp(stack_t **stack, unsigned int line_number);
 void modOp(stack_t **stack, unsigned int line_number);
 void popOp(stack_t **stack, unsigned int line_number);
 void pcharOp(stack_t **stack, unsigned int line_number);
+void pstrOp(stack_t **stack, unsigned int line_number);
 
 stack_t *stackPushing(stack_t **top);
 
