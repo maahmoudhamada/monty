@@ -28,7 +28,7 @@ void pallOp(stack_t **stack, unsigned int line_number __attribute__((unused)))
 stack_t *p;
 int len = listLen();
 
-if (len == 0)
+if (len == 0 || stack == NULL)
 return;
 for (p = *stack; p; p = p->next)
 printf("%d\n", p->n);
@@ -46,7 +46,7 @@ void pintOp(stack_t **stack, unsigned int line_number __attribute__((unused)))
 {
 int len = listLen();
 
-if (len == 0)
+if (len == 0 || stack == NULL)
 errorHandling("can't pint, stack empty", 3);
 else
 printf("%d\n", (*stack)->n);
