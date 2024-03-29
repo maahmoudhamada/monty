@@ -17,7 +17,7 @@ errorHandling("usage: push integer", 3);
 
 f = getOpCode(inf.lineArgs[0]);
 if (f == NULL)
-errorHandling("unknow instruction", 4);
+errorHandling("unknown instruction", 4);
 
 f(&inf.top, inf.lineNumb);
 free2d(inf.lineArgs);
