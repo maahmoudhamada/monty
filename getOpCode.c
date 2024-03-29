@@ -22,6 +22,7 @@ instruction_t opCmd[] = {
 {"mul", mulOp},
 {"mod", modOp},
 {"pop", popOp},
+{"pchar", pcharOp},
 {NULL, NULL}};
 int i = 0;
 
