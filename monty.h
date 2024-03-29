@@ -80,6 +80,7 @@ void pallOp(stack_t **stack, unsigned int line_number);
 void pintOp(stack_t **stack, unsigned int line_number);
 void swapOp(stack_t **stack, unsigned int line_number);
 void nopOp(stack_t **stack, unsigned int line_number);
+void addOp(stack_t **stack, unsigned int line_number);
 
 stack_t *stackPushing(stack_t **top);
 
