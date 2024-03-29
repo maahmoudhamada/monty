@@ -13,7 +13,7 @@ void popOp(stack_t **stack, unsigned int line_number __attribute__((unused)))
 stack_t *ptr;
 int len = listLen();
 
-if (len == 0)
+if (len == 0 || !*stack || !stack)
 errorHandling("can't pop an empty stack", 3);
 
 ptr = (*stack)->next;
