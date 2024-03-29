@@ -58,7 +58,7 @@ buf[j++] = line[i];
 }
 
 buf[j] = '\0';
-if (buf[0] == '\0')
+if (buf[0] == '\0' || buf[0] == '#')
 return (-1);
 inf.line = strdup(buf);
 return (0);

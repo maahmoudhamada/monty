@@ -9,7 +9,7 @@
 */
 void checkValue(char *str)
 {
-if (strcmp(str, "0") == 0)
+if (strcmp(str, "0") == 0 || strcmp(str, "-0") == 0)
 inf.opVal = 0;
 
 else
