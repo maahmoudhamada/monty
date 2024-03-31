@@ -24,6 +24,7 @@ instruction_t opCmd[] = {
 {"pop", popOp},
 {"pchar", pcharOp},
 {"pstr", pstrOp},
+{"rotl", rotlOp},
 {NULL, NULL}};
 int i = 0;
 
