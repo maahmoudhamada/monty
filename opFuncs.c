@@ -11,6 +11,15 @@
 
 void pushOp(stack_t **stack, unsigned int line_number __attribute__((unused)))
 {
+int i = 0;
+for (i = 0; inf.lineArgs[1][i]; i++)
+{
+if (inf.lineArgs[1][0] == '-')
+continue;
+else if (!isdigit(inf.lineArgs[1][i]))
+errorHandling("usage: push integer", 3);
+
+}
 checkValue(inf.lineArgs[1]);
 stackPushing(stack);
 }
